@@ -1,14 +1,16 @@
-# TwitchPlays
-These are the three Python files I use that allows Twitch Chat or Youtube Chat to control your keyboard or mouse to play a game. You are welcome to use or adapt this code for your own content.
+# TwitchChatTTS
+These are four python files and an INI file that handles Twitch Chat messages and converts them into Speech using Google's Text to Speech.
 
 To run the code you will need to install Python 3.9.  
 Additionally, you will need to install the following python modules using Pip:  
 python -m pip install keyboard  
-python -m pip install pydirectinput  
-python -m pip install pyautogui  
-python -m pip install pynput  
-python -m pip install requests  
+python -m pip install gtts  
+python -m pip install io  
+python -m pip install pygame   
 
-Once Python is set up, simply change the Twitch username (or Youtube channel ID) in TwitchPlays_TEMPLATE.py, and you'll be ready to go.
+Running ConfigureTTS.py will ask for inputs to change the settings in the Settings.ini file before running the text to speech program.
 
-This code is originally based off Wituz's Twitch Plays template, then expanded by DougDoug and DDarknut with help from Ottomated for the Youtube side. For now I am not reviewing any pull requests or code changes, this code is meant to be a simple prototype that is uploaded for educational purposes. But feel free to fork the project and create your own version!
+Running TTS.py will automatically read in Settings.ini and run the text to speech program
+
+
+This code is originally based off Wituz's Twitch Plays template, then expanded by DougDoug and DDarknut with help from Ottomated. I later took the Twitch portiion of the connection file and made a file that converts the data grabbed from the connection file, and converts it into Speech Audio. 
