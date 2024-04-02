@@ -5,7 +5,6 @@ To run the code you will need to install Python 3.9.
 Additionally, you will need to install the following python modules using Pip:  
 python -m pip install keyboard  
 python -m pip install gtts  
-python -m pip install io  
 python -m pip install pygame   
 
 Running ConfigureTTS.py will ask for inputs to change the settings in the Settings.ini file before running the text to speech program.
